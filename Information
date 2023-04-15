@@ -1,5 +1,4 @@
 1. Usefull Command
-
 - Name of Current user : whoami (linux/windows)
 - Operating System : uname -a (linux) | ver (windows)
 - Network Information : ifconfig (linux) | ipconfig "or" ipconfig /all (windows)
